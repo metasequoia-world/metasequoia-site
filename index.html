@@ -3,41 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>メタセコイア (Metasequoia) Official Site</title>
+    <title>メタセコイア 公式ポータルサイト | 電子の森のナビゲーター</title>
+    <meta name="description" content="電子の森からあなたを導くAIナビゲーター「メタセコイア」の特設ホームページです。">
     <style>
         body {
-            background-color: #0b0f19;
-            color: #f0f4f8;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
         }
         header {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 40px 0;
+            border-bottom: 2px solid #334155;
         }
         h1 {
-            color: #ff4757;
-            font-size: 2rem;
-            margin-bottom: 5px;
+            color: #f43f5e;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
         .subtitle {
-            color: #ff6b81;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            font-weight: bold;
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
         }
         .catchphrase {
-            color: #a4b0be;
-            font-size: 0.95rem;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            font-style: italic;
         }
-        .card {
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        section {
             background-color: #1e293b;
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         h2 {
             color: #38bdf8;
@@ -47,7 +54,8 @@
             padding-bottom: 8px;
         }
         ul {
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
             margin: 0;
         }
         li {
@@ -61,17 +69,12 @@
             text-decoration: underline;
         }
         .audio-container {
-            text-align: center;
-            background: #0f172a;
-            padding: 15px;
-            border-radius: 8px;
             margin-top: 15px;
-            border: 1px solid #334155;
+            text-align: center;
         }
         audio {
             width: 100%;
-            max-width: 300px;
-            margin-top: 10px;
+            border-radius: 8px;
         }
         footer {
             text-align: center;
@@ -89,30 +92,32 @@
         <div class="catchphrase">――電子の森から、あなたを導くナビゲーター。</div>
     </header>
 
-    <div class="card">
-        <h2>About</h2>
-        <p>ここは、AIナビゲーター「メタセコイア」の特設ホームページです。YouTubeでの音楽・MV制作や、Instagramでのキャラクター深掘りを行っています。</p>
-        
-        <!-- 🎵 狐火ランナー 音楽プレイヤー -->
-        <div class="audio-container">
-            <p style="margin: 0 0 5px 0; font-size: 0.9rem; color: #ff4757;">🎵 『狐火ランナー』 (Instrumental)</p>
-            <audio controls>
-                <source src="kitsunehi-runner.mp3" type="audio/mp3">
-                お使いのブラウザは音声再生に対応していません。
-            </audio>
-        </div>
-    </div>
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>ここは、AIナビゲーター「メタセコイア」の特設ホームページです。YouTubeでの音楽・MV制作や、Instagramでのキャラクター深掘りを行っています。</p>
+            
+            <div class="audio-container">
+                <div style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 5px;">🎵 『狐火ランナー』 (BGM)</div>
+                <!-- スマホの自動再生制限を回避するため muted（無音スタート）にしています。再生ボタンで音量を出せます -->
+                <audio controls autoplay muted loop>
+                    <source src="kitsunehi-runner.mp3" type="audio/mp3">
+                    お使いのブラウザは音声再生に対応していません。
+                </audio>
+            </div>
+        </section>
 
-    <div class="card">
-        <h2>Links</h2>
-        <ul>
-            <li>YouTubeチャンネル (<a href="https://www.youtube.com/@bigblack2026" target="_blank">@bigblack2026</a>)</li>
-            <li>Instagram (<a href="https://www.instagram.com/metasequoia_world" target="_blank">@metasequoia_world</a>)</li>
-        </ul>
-    </div>
+        <section>
+            <h2>Links</h2>
+            <ul>
+                <li>📺 YouTubeチャンネル：<a href="https://www.youtube.com/@bigblack2026" target="_blank">@bigblack2026</a></li>
+                <li>📸 Instagram：<a href="https://www.instagram.com/metasequoia_world" target="_blank">@metasequoia_world</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        &copy; 2026 Metasequoia Official
+        &copy; 2026 Metasequoia World. All Rights Reserved.
     </footer>
 
 </body>
