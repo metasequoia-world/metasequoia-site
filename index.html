@@ -9,6 +9,16 @@
     <!-- Google Search Console 所有権確認タグ -->
     <meta name="google-site-verification" content="LDt6wKBXmsTJcEWxp9qbPYgog_8mKJ1W3rAloxcTYp4" />
 
+    <!-- Googleタグ (gtag.js) - Googleアナリティクス -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W7SY0D157M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W7SY0D157M');
+    </script>
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -51,6 +61,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         h2 {
+            content: "";
             color: #38bdf8;
             font-size: 1.2rem;
             margin-top: 0;
@@ -103,7 +114,6 @@
             
             <div class="audio-container">
                 <div style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 5px;">🎵 『狐火ランナー』 (BGM)</div>
-                <!-- 自動再生とミュートを外し、自分で再生する仕様に変更 -->
                 <audio controls loop>
                     <source src="kitsunehi-runner.mp3" type="audio/mp3">
                     お使いのブラウザは音声再生に対応していません。
